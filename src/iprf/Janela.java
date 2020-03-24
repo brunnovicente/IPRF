@@ -81,6 +81,7 @@ public class Janela extends javax.swing.JFrame {
         jliquidofinal = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("CÁLCULO DO SALÁRIO");
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Dados do Servidor", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 18))); // NOI18N
 
@@ -418,8 +419,10 @@ public class Janela extends javax.swing.JFrame {
 
     private void jregimeItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jregimeItemStateChanged
         if(jregime.getSelectedIndex() == 1){
-            jfunp.setSelectedIndex(1);
-            jfunp.setEnabled(false);
+            //jfunp.setSelectedIndex(1);
+            //jfunp.setEnabled(false);
+            jregime.setSelectedIndex(0);
+            JOptionPane.showMessageDialog(null, "Sistema ainda não calcula previdência para regime antigo.", "Aviso", JOptionPane.ERROR_MESSAGE);
         }else{
             jfunp.setEnabled(true);
         }

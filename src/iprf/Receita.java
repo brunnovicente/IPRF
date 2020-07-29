@@ -36,7 +36,7 @@ public class Receita {
         }else if(base <= 4664.68){
             imposto = (base * 0.225) - 636.13;
         }else{
-            imposto = (base*0.275) - 869.36;
+            imposto = (base*0.25) - 869.36;
         }
         return this.truncar(imposto, 2);
     }

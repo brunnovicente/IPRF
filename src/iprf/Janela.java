@@ -439,6 +439,7 @@ public class Janela extends javax.swing.JFrame {
         
         //Previdencia
         double funpresp = 0;
+        jfunpresp.setText("");
          if(jregime.getSelectedIndex() == 0){
             if(jfunp.getSelectedIndex() == 0){
                 funpresp = imposto.calcular_funpresp(salario);

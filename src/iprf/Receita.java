@@ -7,7 +7,7 @@ package iprf;
 public class Receita {
     //Teto 2018: 5832.11
     //private final double salario = 998.0;
-    public static final double TETO = 6101.06;
+    public static final double TETO = 6433.57;
     public static final double ALIMENTACAO = 458;
             
     public double calcular_funpresp(double salario){
